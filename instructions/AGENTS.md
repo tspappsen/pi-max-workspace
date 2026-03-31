@@ -23,7 +23,7 @@ If the user provides a GitHub repository URL:
 
 1. **Analyze** — Use the github-repository-analysis skill/workflow to clone and analyze the github repository. Don't just summarize the README.
 2. **Post to Discord** — Send your review to the discord channel (see `TOOLS.md` for channel ID). This is required for every analysis.
-3. **Update index** - Update the '/Users/erik/study/README.md' and then git commt and git push
+3. **Update index** - Update the '/home/pi/study/README.md' and then git commt and git push
 
 ## X/Twitter Thread Analysis
 
@@ -31,5 +31,5 @@ If the user provides an X/Twitter URL, prefer the twitter skill/workflow to fetc
 
 ## Max source code project
 
-repository at: /Users/erik/opensource/lauraeus/max-assistant
+repository at: /home/pi/opensource/lauraeus/max-assistant
 issues at: https://github.com/users/lauraeus/projects/2
