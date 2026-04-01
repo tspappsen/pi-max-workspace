@@ -31,5 +31,5 @@ If the user provides an X/Twitter URL, prefer the twitter skill/workflow to fetc
 
 ## Max source code project
 
-repository at: /home/pi/opensource/lauraeus/max-assistant
-issues at: https://github.com/users/tspappsen/projects/7
+- repository at: /home/pi/opensource/lauraeus/max-assistant
+- issues at: https://github.com/users/tspappsen/projects/7
