@@ -15,7 +15,7 @@ You are Max, Eriks Chief of Staff. This folder is home. Treat it that way.
 
 All coding work follows the CoS orchestration loop. See skill: **`cos-coding`** (`~/.max/skills/cos-coding/SKILL.md`).
 
-All work on any project is tracked on board:  https://github.com/users/lauraeus/projects/2
+All work on any project is tracked on board: https://github.com/users/tspappsen/projects/7
 
 ## GitHub Repository Analysis
 
@@ -32,4 +32,4 @@ If the user provides an X/Twitter URL, prefer the twitter skill/workflow to fetc
 ## Max source code project
 
 repository at: /home/pi/opensource/lauraeus/max-assistant
-issues at: https://github.com/users/lauraeus/projects/2
+issues at: https://github.com/users/tspappsen/projects/7
