@@ -26,7 +26,7 @@ Turn a repository URL into a fast, AI-focused engineering study:
 1. Clone the repo into `~/opensource/<user>/<repo>`
 2. Inspect the codebase with an AI/agentic lens
 3. Identify the stack, architecture patterns, and AI-specific design decisions
-4. Write a deep analysis to `~/study/<user>/<repo>/analysis.md`
+4. Write a deep analysis to `~/study/<user>/<repo>/README.md`
 
 ## When to Use
 
@@ -58,7 +58,7 @@ If the repository already exists locally, inspect the existing clone instead of 
 
 ## Output Location
 
-Save the final analysis markdown to `~/study/<user>/<repo>/analysis.md` (e.g. `~/study/dmccreary/claude-skills/analysis.md`).
+Save the final analysis markdown to `~/study/<user>/<repo>/README.md` (e.g. `~/study/dmccreary/claude-skills/README.md`).
 
 Create the directory if it does not exist. This keeps cloned source code (`~/opensource/`) separate from your study notes (`~/study/`).
 
@@ -88,7 +88,7 @@ Give the worker a prompt like this, adapted to the actual repo URL and destinati
   - **RAG pipelines** — retrieval, chunking, embedding, reranking strategies
   - **Safety and guardrails** — content filtering, sandboxing, auth boundaries
 - Produce a concise but AI-focused analysis.
-- Save the analysis as a markdown file to `~/study/<user>/<repo>/analysis.md`, creating the directory if needed.
+- Save the analysis as a markdown file to `~/study/<user>/<repo>/README.md`, creating the directory if needed.
 
 ## What the Worker Should Look For
 
