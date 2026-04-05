@@ -37,7 +37,7 @@ This wiki skill extends the existing copilot-mind vault. Key integration points:
 - **Vault structure**: Wiki directories (`philosophies/`, `patterns/`, `eras/`, `people/`, etc.) live alongside existing vault folders (`work/`, `org/`, `brain/`). They do not replace them.
 - **`brain/` enrichment**: The absorb loop should update existing `brain/Patterns.md`, `brain/Memories.md`, and `brain/Key-Decisions.md` when relevant personal data is absorbed.
 - **`org/people/`**: Existing person notes live here. The wiki may create richer companion articles in `people/` with full narrative depth, linking back to the atomic `org/people/` note.
-- **Wikilinks**: Use `[[wikilinks]]` between all articles. Every new wiki article must link to at least one existing vault note.
+- **Wikilinks**: Use `[[wikilinks]]` between all articles for Obsidian or compatible tools. On GitHub, these do NOT render as hyperlinks—use standard Markdown links `[Page Name](Page%20Name.md)` if you want clickable links in the GitHub web UI. Every new wiki article must link to at least one existing vault note.
 - **Search**: Use `qmd query "..."` for semantic search if qmd is installed; fall back to `grep -r` otherwise.
 - **Validation**: The `hooks/validate-write.py` hook runs after every `.md` write and checks frontmatter. This applies to wiki articles too.
 
@@ -72,7 +72,7 @@ The ingest script should auto-detect the format:
 
 **Apple Notes** (exported `.html`, `.txt`, or `.md` files): Each note becomes a file. Extract: title (first line or filename), creation date, folder/tag, body text. Strip HTML if needed.
 
-**Obsidian Vault** (folder of `.md` files): Each note becomes a file. Preserve frontmatter. Convert `[[wikilinks]]` to plain text for raw entries.
+**Obsidian Vault** (folder of `.md` files): Each note becomes a file. Preserve frontmatter. Convert `[[wikilinks]]` to plain text for raw entries. Note: `[[wikilinks]]` are not rendered as hyperlinks on GitHub—use `[Page Name](Page%20Name.md)` for clickable links.
 
 **Notion Export** (`.md` or `.csv`): Each page becomes a file. Handle nested pages by flattening with parent context.
 

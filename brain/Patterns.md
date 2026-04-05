@@ -9,6 +9,6 @@ tags:
 
 Recurring patterns discovered across work. These inform how Copilot makes suggestions and avoids past mistakes.
 
-See also: [[Memories]] | [[Key-Decisions]]
+See also: Memories | Key-Decisions
 
 -

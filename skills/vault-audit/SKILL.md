@@ -1,11 +1,11 @@
 ---
 name: vault-audit
-description: 'Audit this Obsidian vault for hygiene issues. Use when asked to audit ~/.max/brain, check note quality, find missing frontmatter, detect orphaned notes, locate broken wikilinks, or identify stale active work.'
+description: 'Audit this Obsidian vault for hygiene issues. Use when asked to audit the vault, check note quality, find missing frontmatter, detect orphaned notes, locate broken wikilinks, or identify stale active work.'
 ---
 
 # Vault Audit
 
-Inspect ~/.max/brain for structural and metadata hygiene issues.
+Inspect the vault for structural and metadata hygiene issues.
 
 ## Audit Scope
 
@@ -18,9 +18,9 @@ Report these categories:
 
 ## Workflow
 
-1. Search only within ~/.max/brain.
+1. Search only within this vault.
 2. Exclude templates and session-log artifacts unless the user explicitly wants them audited.
-3. Use note titles derived from filenames when validating wikilinks.
+3. Use note titles derived from filenames when validating wikilinks. Reminder: `[[wikilinks]]` are not clickable on GitHub—use `[Page Name](Page%20Name.md)` for hyperlinks.
 4. When reporting issues, group findings by category and include file paths.
 5. If a category has no findings, say `None`.
 

@@ -1,43 +1,43 @@
 ---
 name: sop-history-ingest
-description: 'Ingest diary-style history files from SopHistory into copilot-mind. Use when asked to incorporate SopHistory notes, import diary files, convert historical markdown into ~/.max/brain notes, preserve raw history while extracting decisions/incidents/project updates, or backfill ~/.max/brain from old working notes.'
+description: 'Ingest diary-style history files from SopHistory into copilot-mind. Use when asked to incorporate SopHistory notes, import diary files, convert historical markdown into vault notes, preserve raw history while extracting decisions/incidents/project updates, or backfill the vault from old working notes.'
 ---
 
 # SOP History Ingest
 
-Import diary-style files from `/home/pi/.max/brain/SopHistory/` into ~/.max/brain without treating the source files as canonical brain notes.
+Import diary-style files from `SopHistory/` into the vault without treating the source files as canonical vault notes.
 
 ## Purpose
 
-`/home/pi/.max/brain/SopHistory/` is a raw history archive. The files there may contain valuable project updates, decisions, incidents, architecture notes, and links worth preserving in ~/.max/brain, but the original diary files should remain untouched unless the user explicitly asks to rewrite them.
+`SopHistory/` is a raw history archive. The files there may contain valuable project updates, decisions, incidents, architecture notes, and links worth preserving in the vault, but the original diary files should remain untouched unless the user explicitly asks to rewrite them.
 
 ## Workflow
 
-1. Read the target file or files from `/home/pi/.max/brain/SopHistory/`.
+1. Read the target file or files from `SopHistory/`.
 2. Extract the durable information:
    - project/work updates
    - decisions
    - incidents
    - architecture or reference material
    - noteworthy links to people, teams, systems, or existing notes
-3. Decide how to incorporate the content into ~/.max/brain:
+3. Decide how to incorporate the content into the vault:
    - `work/active/` or `work/archive/YYYY/` for project notes and status updates
    - `work/incidents/` for incidents
    - `work/decisions/` if it exists, otherwise `work/active/` for decision records
    - `reference/` for durable technical knowledge
-   - `/home/pi/.max/brain/Key-Decisions.md` and `/home/pi/.max/brain/Patterns.md` when the diary entry reveals cross-session knowledge worth remembering
+   - `brain/Key-Decisions.md` and `brain/Patterns.md` when the diary entry reveals cross-session knowledge worth remembering
 4. Preserve or add required frontmatter on any note you create or update:
    - `date`
    - `description`
    - `tags`
    - `status` for work notes
-5. Add `[[wikilinks]]` to at least one existing related note for every note you create.
-6. Keep the source `/home/pi/.max/brain/SopHistory/` file unchanged unless the user explicitly asks to transform or move it.
+5. Add `[[wikilinks]]` to at least one existing related note for every note you create. Note: `[[wikilinks]]` are not clickable on GitHub—use `[Page Name](Page%20Name.md)` for hyperlinks.
+6. Keep the source `SopHistory/` file unchanged unless the user explicitly asks to transform or move it.
 
 ## Ingestion Rules
 
-- Treat `/home/pi/.max/brain/SopHistory/` as a source archive, not as the final destination.
-- Prefer extracting and merging into existing brain notes over duplicating the full diary entry.
+- Treat `SopHistory/` as a source archive, not as the final destination.
+- Prefer extracting and merging into existing vault notes over duplicating the full diary entry.
 - If a diary file contains multiple independent concepts, split them into atomic notes instead of forcing everything into one file.
 - Preserve factual nuance; do not flatten a decision, incident, and project update into a single vague summary.
 - If the diary content is mainly transient and not durable, summarize it into the most relevant work note instead of creating unnecessary new notes.
@@ -48,7 +48,7 @@ Import diary-style files from `/home/pi/.max/brain/SopHistory/` into ~/.max/brai
 - Create or update an **incident note** when the file describes a breakage, outage, failure, recovery, or root-cause investigation.
 - Create or update a **work note** when the file is primarily implementation context, progress, findings, or next steps for an active or archived project.
 - Create or update a **reference note** when the strongest value is reusable technical understanding rather than project status.
-- Update `/home/pi/.max/brain/Key-Decisions.md` or `/home/pi/.max/brain/Patterns.md` only for durable cross-session knowledge, not one-off status.
+- Update `brain/Key-Decisions.md` or `brain/Patterns.md` only for durable cross-session knowledge, not one-off status.
 
 ## When to Ask the User
 
@@ -63,6 +63,6 @@ Ask before writing if:
 
 When you finish, report:
 
-1. which `/home/pi/.max/brain/SopHistory/` file or files were processed
-2. which brain notes were created or updated
+1. which `SopHistory/` file or files were processed
+2. which vault notes were created or updated
 3. what durable knowledge was extracted

@@ -13,13 +13,13 @@ aliases:
 
 A living document of goals, aspirations, and current focus areas. Both you and Copilot write to this. Copilot reads it at the start of meaningful work sessions and references it when making suggestions.
 
-See also: [[Memories]] | [[Key-Decisions]] | [[Patterns]]
+See also: Memories | Key-Decisions | Patterns
 
 ## Current Focus
 
 _What am I working toward right now?_
 
-- [[LLM-Knowledge-Bases]] - Exploring the productization of an LLM-maintained personal knowledge base within Obsidian
+- LLM-Knowledge-Bases - Exploring the productization of an LLM-maintained personal knowledge base within Obsidian
 
 ## Goals
 

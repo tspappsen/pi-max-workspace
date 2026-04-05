@@ -9,6 +9,6 @@ tags:
 
 Architectural or workflow decisions worth recalling. Link to the full work note or decision record when one exists.
 
-See also: [[Memories]] | [[Patterns]]
+See also: Memories | Patterns
 
 -

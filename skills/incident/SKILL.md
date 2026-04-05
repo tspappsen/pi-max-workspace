@@ -1,6 +1,6 @@
 ---
 name: incident
-description: 'Create a new incident note in ~/.max/brain. Use when asked to log an incident, open an incident note, capture an outage, record a production issue, or file incident context with ticket, severity, role, and related links.'
+description: 'Create a new incident note in the vault. Use when asked to log an incident, open an incident note, capture an outage, record a production issue, or file incident context with ticket, severity, role, and related links.'
 ---
 
 # Incident
@@ -37,7 +37,7 @@ Set `Root Cause` to `TBD` when it is not yet known.
 2. If `ticket`, `severity`, or `role` are missing, ask the user before writing the note.
 3. Create the note in `work/incidents/` with a descriptive filename based on the ticket or incident title.
 4. Add links to relevant people in `org/people/` and related active projects in `work/active/` when they exist.
-5. Preserve brain conventions for frontmatter and wikilinks.
+5. Preserve vault conventions for frontmatter and wikilinks. Reminder: `[[wikilinks]]` are not clickable on GitHub—use `[Page Name](Page%20Name.md)` for hyperlinks.
 
 ## Writing Guidance
 

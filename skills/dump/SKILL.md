@@ -1,15 +1,15 @@
 ---
 name: dump
-description: 'File a brain dump into ~/.max/brain. Use when asked to capture notes, classify a brain dump, save freeform text, file a project update, record a win, log an incident, or turn rough thoughts into a properly linked brain note.'
+description: 'File a brain dump into the vault. Use when asked to capture notes, classify a brain dump, save freeform text, file a project update, record a win, log an incident, or turn rough thoughts into a properly linked vault note.'
 ---
 
 # Dump
 
-Convert freeform user text into a properly filed brain note.
+Convert freeform user text into a properly filed vault note.
 
 ## When to Use This Skill
 
-Use this skill when the user wants to save rough text, a brain dump, a project update, a win, a decision, or an incident into ~/.max/brain.
+Use this skill when the user wants to save rough text, a brain dump, a project update, a win, a decision, or an incident into the vault.
 
 ## Workflow
 
@@ -21,14 +21,14 @@ Use this skill when the user wants to save rough text, a brain dump, a project u
    - `ARCHITECTURE` -> `reference/`
    - `PERSON` or `1ON1` -> `org/people/` or `thinking/`, depending on whether the note is durable
    - `PROJECT_UPDATE` -> `work/active/`
-   - If nothing matches cleanly, choose the best brain location from the operating manual and explain the choice briefly.
+   - If nothing matches cleanly, choose the best vault location from the operating manual and explain the choice briefly.
 3. Create or update the target note with YAML frontmatter. At minimum include:
    - `date`
    - `description`
    - `tags`
    - `status` for work notes
 4. Use the existing note template conventions from `templates/note.md` when they apply.
-5. Add `[[wikilinks]]` to at least one existing related note. A note without links is a bug.
+5. Add `[[wikilinks]]` to at least one existing related note. A note without links is a bug. Note: `[[wikilinks]]` are not clickable on GitHub—use `[Page Name](Page%20Name.md)` for hyperlinks.
 6. Preserve existing frontmatter if editing an existing note.
 
 ## Writing Guidance
