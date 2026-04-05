@@ -33,3 +33,7 @@ If the user provides an X/Twitter URL, prefer the twitter skill/workflow to fetc
 
 - repository at: /home/pi/opensource/lauraeus/max-assistant
 - issues at: https://github.com/users/tspappsen/projects/7
+
+## Important Repositories
+
+- **copilot-mind** — `/home/pi/study/tspappsen/copilot-mind` — Erik's priority project. Pay attention to this one.
